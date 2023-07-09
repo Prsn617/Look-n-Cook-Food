@@ -1,0 +1,208 @@
+@import "./global";
+
+header{
+    padding-inline: 8vw;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 60px;
+            width: 60px;
+        }
+
+        span{
+            font-family: $logoFont;
+            font-size: 1.625rem;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+    }
+
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            color: $blackL;
+        }
+
+        a:hover{
+            color: gray;
+        }
+
+        li:not(:last-child){
+            margin-right: 5vw;
+        }
+    }
+
+    .acc{
+
+        a,button{
+            padding: .5em 1em;
+            background-color: $green;
+            border-radius: 24px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            border: 0;
+
+            &:hover{
+                background-color: $greenD;
+                transition: 250ms ease-in;
+            }
+        }
+    }
+
+}
+
+.hero-container{
+    height: 80vh;
+    padding-inline: 8vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-size: 2.8125rem;
+    }
+
+    p{
+        margin-left: 2px;
+        margin-block: -1.5rem 1.5rem;
+        color: $blackL;
+    }
+
+    .search{
+        width: 50%;
+        position: relative;
+
+        a{
+            font-size: 1.25rem;
+            padding: .5em 1em;
+            background: $greenD;
+            border-radius: 24px;
+            color: white;
+            font-weight: 600;
+            
+            &:hover{
+                background: $green;
+                transition: 250ms ease-in;
+            }
+        }
+    }
+
+    input{
+        border-radius: 20px;
+        padding: 0.5em 1em;
+        border: 2px solid $greenD;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    span{
+        position: absolute;
+        right: -1em;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+    }
+}
+
+.recipe-container{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding-inline: 8vw;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+
+}
+
+.recipes-box{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px gray;
+
+    img{
+        border-radius: 25px 25px 0 0;
+        width: 100%;
+    }
+
+    .recipe-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        a{
+            width: 200px;
+            padding: 0.5em 1em;
+            background: $greenD;
+            color: white;
+            border-radius: 20px;
+            margin-top: -.375rem;
+
+            &:hover{
+                background: $green;
+            }
+        }
+
+
+    }
+}
+
+
+.meal-details{
+    max-height: 95vh;
+    position: fixed;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em 2em;
+    background-color: $greenD;
+    color: white;
+    border-radius: 20px;
+    
+
+    .newRecipe-meals{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 150px;
+            border-radius: 20px;
+            margin-right: clamp(1rem, 2rem, 3rem);
+        }
+
+    }
+
+    .close{
+        font-weight: 600;
+        position: absolute;
+        color: hsl(0, 75%, 75%);
+        top: 7px;
+        right: 10px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    a{
+        font-weight: 600;
+        color: hsl(39, 100%, 70%);
+    }
+}

@@ -1,0 +1,40 @@
+@media screen and (max-width: 900px) {
+    .logo{
+        span{
+            display: none;
+        }
+    }
+
+    .hero-container{
+        margin-top: 3rem;
+        flex-direction: column;
+
+        .hero-desc{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            position: relative;
+            margin: auto;
+        }
+
+        .search{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hero-img{
+            width: 80vw;
+        }
+
+    }
+
+    .meal-details{
+        width: 92%;
+        padding: 1em .5em;
+    }
+
+}

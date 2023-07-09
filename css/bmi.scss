@@ -1,0 +1,43 @@
+@import "./global";
+
+.bmi-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background: $greenD;
+    color: white;
+}
+
+.bmi-form{
+    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, button{
+        border: 1px solid lightgray;
+        margin-block: 5px 15px;
+        width: 250px;
+        border-radius: 12px;
+        padding: .5em 1em;
+    }
+
+    button{
+        background: orange;
+        border: 1px solid orange;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+
+        &:hover{
+            background: hsl(39, 80%, 60%);
+            transition: 250ms ease-in;
+        }
+    }
+
+    
+}

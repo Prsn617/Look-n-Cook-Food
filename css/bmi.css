@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.bmi-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+  background: #1c9b6d;
+  color: white;
+}
+
+.bmi-form {
+  padding: 1em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bmi-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bmi-form input, .bmi-form button {
+  border: 1px solid lightgray;
+  margin-block: 5px 15px;
+  width: 250px;
+  border-radius: 12px;
+  padding: .5em 1em;
+}
+
+.bmi-form button {
+  background: orange;
+  border: 1px solid orange;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.bmi-form button:hover {
+  background: #ebb147;
+  -webkit-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+}
+/*# sourceMappingURL=bmi.css.map */

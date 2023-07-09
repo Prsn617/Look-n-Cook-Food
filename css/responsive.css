@@ -1,0 +1,39 @@
+@media screen and (max-width: 900px) {
+  .logo span {
+    display: none;
+  }
+  .hero-container {
+    margin-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-container .hero-desc {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-container form {
+    position: relative;
+    margin: auto;
+  }
+  .hero-container .search {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .hero-container .hero-img {
+    width: 80vw;
+  }
+  .meal-details {
+    width: 92%;
+    padding: 1em .5em;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
