@@ -1,5 +1,7 @@
 //BMI Calculator
-function bmicalc() {
+function bmicalc(e) {
+  e.preventDefault();
+
   let height = parseFloat(document.getElementById("height").value / 100);
   let weight = parseFloat(document.getElementById("weight").value);
   let bmiCategoryContainer = document.getElementById("bmic");
@@ -66,7 +68,9 @@ function giveAdvice(bmiCategory) {
     },
   ];
 
-  bmiCategory === "" ? "" : (adviceContainer.textContent = "What you can do:");
+  bmiCategory === ""
+    ? ""
+    : (adviceContainer.textContent = "Things you can do:");
   advices.map((a) => {
     if (a.type === bmiCategory) {
       adviceList.innerHTML = "";

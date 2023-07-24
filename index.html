@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/bmi.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/variable.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/bmi.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Look n Cook</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="LooknCook Logo">
-            </a>
-            <span>Look n Cook</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="bmi.html">BMI</a></li>
-                <li><a href="#meal" class="all">Recipes</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="mid-box">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="LooknCook Logo" />
+        </a>
+        <span>Look n Cook</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="bmi.html">BMI</a></li>
+          <li><a href="#meal" class="all">Recipes</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <section class="hero-container">
-            <div class="hero-desc">
-                <h1>The Ultimate Cooking App</h1>
-                <p>Search for Hundreds of Recipes all in one App.</p>
-                <form action="#" id="formm">
-                    <div class="search">
-                        <input type="text" name="" id="search-input" placeholder="Search for recipes">
-                            <span class="material-icons" id="search-btn">
-                                search
-                            </span>                 
-                    </div>
-                </form>
+    <main class="mid-box">
+      <section class="hero-container">
+        <div class="hero-desc">
+          <h1>The Ultimate Cooking App</h1>
+          <p>
+            Search for Hundreds of Recipes all in one App. Just type in the
+            ingredient that you want the recipe of, and with one tap you can get
+            multiples of recipes to cook a good food from.
+          </p>
+          <form action="#" id="formm">
+            <div class="search">
+              <input
+                type="text"
+                name=""
+                id="search-input"
+                placeholder="List the ingredient..."
+              />
+              <span class="material-icons" id="search-btn"> search </span>
             </div>
-    
-            <div class="hero-img-container">
-                <img class="hero-img" src="./images/hero.png" alt="Food Picture">
-            </div>
-        </section>
+          </form>
+        </div>
 
-        <section class="recipe-container" id="meal">
-        </section>
+        <div class="hero-img-container">
+          <img class="hero-img" src="./images/hero.png" alt="Food Picture" />
+        </div>
+      </section>
 
-        <section class="meal-details hidden">
-            <span class="close material-icons" id="close-btn" onclick="closef()">
-                close
-            </span>
-        </section>
+      <section class="recipe-container" id="meal"></section>
+
+      <section class="meal-details hidden">
+        <span class="close material-icons" id="close-btn" onclick="closef()">
+          close
+        </span>
+      </section>
     </main>
-</body>
+  </body>
 
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </html>

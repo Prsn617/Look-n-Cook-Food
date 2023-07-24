@@ -17,7 +17,7 @@
     <title>Look n Cook</title>
   </head>
   <body>
-    <header>
+    <header class="mid-box">
       <div class="logo">
         <a href="index.html">
           <img src="./images/logo.png" alt="LooknCook Logo" />
@@ -33,27 +33,28 @@
       </nav>
     </header>
 
-    <main>
+    <main class="mid-box">
       <div class="bmi-container">
         <div class="bmi-form">
           <h3>BMI Calculator</h3>
           <form action="#">
             <label>Height (in cm):</label
-            ><input type="text" id="height" /><br />
+            ><input type="text" id="height" placeholder="0" /><br />
             <label>Weight (in kg): </label
-            ><input type="text" id="weight" /><br />
-            <button onclick="bmicalc()">Go</button><br />
-            <label><b>BMI: </b></label>
-            <label id="bmi"></label>
-            <p></p>
-            <label><b>BMI Categories: </b></label>
-            <label id="bmic"></label>
+            ><input type="text" id="weight" placeholder="0" /><br />
+            <button onclick="bmicalc(event)">Go</button><br />
           </form>
         </div>
-      </div>
-      <div class="advice-container">
-        <h2 class="advice"></h2>
-        <ol id="adv"></ol>
+        <div class="advice-container">
+          <div class="bmi-result">
+            <label><b>BMI: </b></label>
+            <label id="bmi"></label>
+            <label><b>Category: </b></label>
+            <label id="bmic"></label>
+          </div>
+          <h2 class="advice"></h2>
+          <ol id="adv"></ol>
+        </div>
       </div>
     </main>
   </body>

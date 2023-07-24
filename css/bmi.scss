@@ -2,16 +2,22 @@
 
 .bmi-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  background: $greenD;
-  color: white;
+  background-color: #fff;
+  gap: 16px;
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  box-shadow: 4px 4px 8px 1px $green;
+  border-radius: 7px;
 }
 
 .bmi-form {
+  align-items: center;
   padding: 1em 1.5em;
   display: flex;
   flex-direction: column;
+  flex: 1;
 
   form {
     display: flex;
@@ -23,34 +29,59 @@
     border: 1px solid lightgray;
     margin-block: 5px 15px;
     width: 250px;
-    border-radius: 12px;
-    padding: 0.5em 1em;
+    border-radius: 8px;
+    padding: 0.75em 1em;
+    font-size: 1.1rem;
   }
 
   button {
-    background: orange;
-    border: 1px solid orange;
+    background: $greenD;
+    border: 1px solid $greenD;
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    transition: 250ms ease-in;
 
     &:hover {
-      background: hsl(39, 80%, 60%);
-      transition: 250ms ease-in;
+      background: $green;
+      transition: 350ms ease-in;
     }
   }
 }
 
 .advice-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 20px;
 
-  ul {
-    padding-left: 0;
+  h2 {
+    margin-block: 32px -7px;
   }
 
-  li {
-    list-style: decimal;
+  label {
+    font-size: 1.1rem;
+  }
+
+  #bmi {
+    margin-right: 30px;
+  }
+
+  ol {
+    margin-left: -36px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+      border-radius: 4px;
+      padding: 0.5em 1em;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    li:nth-child(#{$i}) {
+      background-color: hsl(($i + 9) * 12, 70%, 80%);
+    }
   }
 }

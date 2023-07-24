@@ -1,24 +1,29 @@
 @import "./variable";
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $mainFont;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+  background-color: #fdfdfd;
 }
 
-button{
-    box-sizing: content-box;
+.mid-box {
+  padding-inline: 12vw 10vw;
 }
 
-li{
-    list-style: none;
+button {
+  box-sizing: content-box;
 }
 
-a{
-    text-decoration: none;
+li {
+  list-style: none;
 }
 
-.hidden{
-    display: none;
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }

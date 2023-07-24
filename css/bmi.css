@@ -5,6 +5,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: #fdfdfd;
+}
+
+.mid-box {
+  padding-inline: 12vw 10vw;
 }
 
 button {
@@ -25,16 +30,22 @@ a {
 
 .bmi-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  background: hsl(158, 69%, 36%);
-  color: white;
+  background-color: #fff;
+  gap: 16px;
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  box-shadow: 4px 4px 8px 1px hsl(158, 59%, 48%);
+  border-radius: 7px;
 }
 
 .bmi-form {
+  align-items: center;
   padding: 1em 1.5em;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .bmi-form form {
   display: flex;
@@ -45,29 +56,63 @@ a {
   border: 1px solid lightgray;
   margin-block: 5px 15px;
   width: 250px;
-  border-radius: 12px;
-  padding: 0.5em 1em;
+  border-radius: 8px;
+  padding: 0.75em 1em;
+  font-size: 1.1rem;
 }
 .bmi-form button {
-  background: orange;
-  border: 1px solid orange;
+  background: hsl(158, 69%, 32%);
+  border: 1px solid hsl(158, 69%, 32%);
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  transition: 250ms ease-in;
 }
 .bmi-form button:hover {
-  background: hsl(39, 80%, 60%);
-  transition: 250ms ease-in;
+  background: hsl(158, 59%, 48%);
+  transition: 350ms ease-in;
 }
 
 .advice-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 20px;
 }
-.advice-container ul {
-  padding-left: 0;
+.advice-container h2 {
+  margin-block: 32px -7px;
 }
-.advice-container li {
-  list-style: decimal;
+.advice-container label {
+  font-size: 1.1rem;
+}
+.advice-container #bmi {
+  margin-right: 30px;
+}
+.advice-container ol {
+  margin-left: -36px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.advice-container ol li {
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+.advice-container li:nth-child(1) {
+  background-color: hsl(120, 70%, 80%);
+}
+.advice-container li:nth-child(2) {
+  background-color: hsl(132, 70%, 80%);
+}
+.advice-container li:nth-child(3) {
+  background-color: hsl(144, 70%, 80%);
+}
+.advice-container li:nth-child(4) {
+  background-color: hsl(156, 70%, 80%);
+}
+.advice-container li:nth-child(5) {
+  background-color: hsl(168, 70%, 80%);
+}
+.advice-container li:nth-child(6) {
+  background-color: hsl(180, 70%, 80%);
 }/*# sourceMappingURL=bmi.css.map */
